@@ -1,35 +1,53 @@
 Downloading Libraries
 ============
-- "Download Zip" from each of these two libraries and unzip them to <Desktop>
->**https://github.com/chrisbanes/ActionBar-PullToRefresh** 
->**https://github.com/castorflex/SmoothProgressBar**
+- "Download Zip" from each of these two libraries and unzip them to Somewhere/
+    **https://github.com/chrisbanes/ActionBar-PullToRefresh** 
+    **https://github.com/castorflex/SmoothProgressBar**
 - You should now have:
->Desktop/ActionBar-PullToRefresh
->Desktop/SmoothProgressBar
+1. Somewhere/ActionBar-PullToRefresh/
+2. Somewhere/SmoothProgressBar/
 
-Importing them into Eclipse
+Importing Into Eclipse
 ============
 - File > Import... > Android(Existing Android Code...) > Browse...
 
 SmoothProgressBar
 ----
-- Choose SmoothProgressBar > library
-- "New Project Name" > smoothprogressbar
+- Choose **SmoothProgressBar** > *library*
+- *New Project Name* > **smoothprogressbar**
 
 ActionBar-PullToRefresh
 -----
-- Choose ActionBar-PullToRefresh > library
-- "New Project Name" > pulltorefresh
+- Choose **ActionBar-PullToRefresh** > *library*
+- *New Project Name* > **pulltorefresh**
 
-Setting up dependencies
+Setting Up Dependencies
 ==========
 
 SmoothProgressBar
 ----
-- Right-click "smoothprogressbar" > *Properties*
-- *Java Build Path* > *Source*
+- Right-click on **smoothprogressbar** project > *Properties*
+- From the side bar, *Java Build Path* > *Source* > **Add Folder**
+- Select **java**. Click Ok.
+- From the side bar again, *Android* > *Target Name* > **Android 4.1.2**
+- Under *Library* below, check **Is Library**
+
 
 ActionBar-PullToRefresh
 -----
-> Choose ActionBar-PullToRefresh > library
-> "New Project Name" > pulltorefresh
+- Right-click on **pulltorefresh** project > *Properties*
+- From the side bar, *Java Build Path* > *Source* > **Add Folder**
+- Select **java**. Click Ok.
+- From the side bar again, *Android* > *Target Name* > **Android 4.1.2**
+- Under *Library* below, check **Is Library**
+- Click *Add...*
+- Select **smoothprogressbar**.
+
+MunicipalFeedback
+-----
+- Right-click on **MunicipalFeedback** project > *Properties*
+- From the side bar, *Android* > *Target Name*.
+- Under *Library* below, Click *Add...*
+- Select **pulltorefresh**.
+ 
+
